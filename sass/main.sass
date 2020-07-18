@@ -1,0 +1,117 @@
+@import '../../sass/mixin'
+@import '../../sass/_variable'
+@import '../../sass/_import'
+@import '../../sass/_function'
+@import '../../sass/_extend'
+@import '../../sass/_dev'
+@import '../../sass/_responsive'
+@import '../../sass/_selecter'
+@import '../../sass/_reset'
+
+body
+    color: #777
+
+.header
+    +padding($v: 1rem, $h:1rem)
+    +flexbox($jc: space-between, $ai: center)
+    box-shadow: 0 2px 5px #eee
+    font-size: 1.4rem
+    &__right
+        ul
+            +flexbox($ai: center)
+            li
+                +padding($h: .5rem)
+                &.youtube
+                    a
+                        font-size: 1.8rem
+                        +flexbox($ai: center)
+                        position: relative
+                        i
+                            color: red
+                        h2
+                            font-size: 1.4rem
+                            letter-spacing: -.2rem
+                        sup
+                            font-size: .8rem
+                            position: absolute
+                            top: 0
+                            right: -1rem
+    &__middle
+    &__left
+        ul
+            +flexbox($ai: center)
+            li
+                +padding($h: .8rem)
+                img
+                    +circle-img($val: 3rem)
+main
+    article
+        section.theater
+            +padding($h: 1rem, $v: 1rem)
+            img
+                width: 100%
+                max-height: 60rem
+
+        section.overview
+            +padding($h: 1rem)
+            header
+                box-shadow: 0 2px 5px #eee
+                h3
+                    font-size: 2rem
+                    font-weight: 300
+                    margin-bottom: .3rem
+                .listLarge
+                    +flexbox($jc: space-between, $ai: center)
+                    .listLeft
+                        +flexbox
+                        li
+                            +padding($h: .5rem)
+                    .listRight
+                        font-size: 1.3rem
+                        +flexbox
+                        li
+                            +padding($h: .5rem, $v: 1rem)
+                            a
+                                +flexbox($ai: center)
+                                h6
+                                    +padding($h: .5rem)
+            section.infoBox
+                +padding($v: 2rem)
+                box-shadow: 0 2px 5px #eee
+                section.contributor
+                    +flexbox($ai: center)
+                    +padding($v: .5rem)
+                    margin-bottom: 1rem
+                    p
+                        img
+                            +circle-img($val: 4rem)
+                    .contributorInfo
+                        margin-right: auto
+                        +padding($h: 1rem)
+                        h3
+                            font-size: 1.2rem
+                        h6
+                            b
+                                font-size: .8rem
+                            small
+                                font-size: .8rem
+                    button
+                        +btn($bgColor: #e40202, $padding: .4rem 1.5rem)
+                        outline: none
+                section.description
+                    +padding($h: 2rem)
+                    pre
+                        +padding($v: 2rem)
+                    section.descriptionBottom
+                        ul
+                            li
+                                font-weight: 700
+                                +padding($v: .3rem)
+                                dl
+                                    +flexbox($ai: center)
+                                    dt
+                                        +flexbasis(30%)
+                                        word-wrap: break-word
+                                    dd
+                                        +flexbasis(70%)
+                                        font-weight: 300
