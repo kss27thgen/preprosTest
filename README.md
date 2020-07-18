@@ -1,1 +1,7 @@
-#test -prepros -xampp #excercise -sass -haml -jquery
+# test 
+- prepros 
+- xampp 
+# excercise 
+- sass 
+- haml 
+- jquery
