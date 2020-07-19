@@ -1,0 +1,147 @@
+@import '../../sass/mixin'
+@import '../../sass/_variable'
+@import '../../sass/_import'
+@import '../../sass/_function'
+@import '../../sass/_extend'
+@import '../../sass/_dev'
+@import '../../sass/_responsive'
+@import '../../sass/_selecter'
+@import '../../sass/_reset'
+
+header
+    +padding($v: .5rem, $h: 1rem)
+    +flexbox($ai: center)
+    border-bottom: 1px solid lightgray
+    img
+        width: 4rem
+        height: 4rem
+    .logo
+        margin-right: auto
+        +padding($h: .5rem)
+        h2
+            font-size: 1.6rem
+            font-weight: 300
+            span
+                font-size: 1.4rem
+                font-family: sans-serif
+    .headerRight
+        font-size: 2rem
+        a
+            +padding($h: .3rem)
+            i
+                &.fa-phone-square
+                    color: red
+                &.fa-bars
+
+main
+    .swiper
+        padding: 1rem
+        background: #3fccdf
+        position: relative
+        margin-bottom: 15rem
+        h5
+            text-align: center
+            color: #fff
+            font-size: 1.4rem
+            margin-bottom: 1rem
+        .swiper-container
+        .swiperPop
+            width: 80%
+            +padding($v: 2rem, $h: 1rem)
+            background: yellow
+            position: absolute
+            bottom: 0
+            left: 50%
+            transform: translateX(-50%) translateY(100%)
+            z-index: 3
+            &::before
+                content: ''
+                position: absolute
+                left: 50%
+                top: -15px
+                display: block
+                width: 0
+                height: 0
+                border-right: 15px solid transparent
+                border-bottom: 15px solid #fff3ad
+                border-left: 15px solid transparent
+            h6
+                color: orangered
+                font-size: 1.2rem
+
+    .challenge
+        margin-bottom: 10rem
+        h3
+            text-align: center
+            color: #26a897
+            font-size: 2.5rem
+            letter-spacing: .5rem
+            text-transform: uppercase
+            margin-bottom: 1rem
+        h4
+            font-size: 1.5rem
+            font-weight: 300
+            text-align: center
+            margin-bottom: 2rem
+        form
+            .search
+                +margin($h: 1rem)
+                border-radius: 3px
+                border: 2px solid #26a897
+                margin-bottom: 1rem
+                h5
+                    +padding($v: 1rem)
+                    background: #26a897
+                    color: #fff
+                    font-size: 1.2rem
+                    text-align: center
+                ul
+                    +flexbox($wrap: wrap)
+                    +padding($h: 1rem, $v: 1rem)
+                    +w700
+                        +padding($h: 5rem, $v: 2rem)
+                    li
+                        +flexbasis(50%)
+                        +padding($v: .3rem)
+                        min-width: 15rem
+                        +flexbox
+                        h6
+                            font-size: 1.1rem
+                            +padding($h: .5rem)
+
+    .pickOne
+        +flexbox($wrap: wrap)
+        .pickOneItem
+            flex: 1
+            min-width: 30rem
+            display: flex
+            flex-direction: column
+            align-items: center
+            +padding($v: 4rem, $h: 2rem)
+            h4
+                color: #fff
+                font-size: 2.2rem
+                letter-spacing: .3rem
+                font-family: sans-serif
+                text-transform: uppercase
+                margin-bottom: 1rem
+            h5
+                color: yellow
+                font-weight: 300
+                font-size: 1.2rem
+                margin-bottom: 1rem
+            .separator
+                margin: 1.5rem 0
+                height: 1px
+                width: 5%
+                background: #fff
+            p
+                color: #fff
+                width: 70%
+                text-align: center
+
+            &.reservation
+                background: #2f68b3
+            &.estimate
+                background: #1e9c8b
+footer

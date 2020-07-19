@@ -10,12 +10,14 @@
 <script src="js/main.js"></script>
 </head>
 <body>
+<aside class="drawer" id="drawer"></aside>
+<section class="overlay" id="overlay"></section>
 <header class="header">
 <section class="header__right">
 <ul>
 <li>
 <a href="#">
-<i class="fas fa-bars"></i>
+<i class="fas fa-bars" id="bargerBtn"></i>
 </a>
 </li>
 <li class="youtube">
@@ -218,16 +220,205 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos modi odit 
 </section>
 </section>
 <section class="related">
+<h5>
+Up Next
+</h5>
+<ul class="relatedVideos">
+<a href="#">
+<li class="relatedVideosItem">
+<p>
+<img alt="" src="./img/thumbnail.jpeg">
+</p>
+<ul class="info">
+<li>
+<h5>
+Making mac & cheese for the first time at age 16
+</h5>
+</li>
+<li>
+<h6>
+Kelly Margot
+</h6>
+</li>
+<li>
 <ul>
 <li>
-111111111
+<b>
+7.3K
+</b>
+<small>
+views
+</small>
 </li>
 <li>
-222222222
+<b>
+3
+</b>
+<small>
+month ago
+</small>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</a>
+<a href="#">
+<li class="relatedVideosItem">
+<p>
+<img alt="" src="./img/thumbnail.jpeg">
+</p>
+<ul class="info">
+<li>
+<h5>
+Making mac & cheese for the first time at age 16
+</h5>
 </li>
 <li>
-333333333
+<h6>
+Kelly Margot
+</h6>
 </li>
+<li>
+<ul>
+<li>
+<b>
+7.3K
+</b>
+<small>
+views
+</small>
+</li>
+<li>
+<b>
+3
+</b>
+<small>
+month ago
+</small>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</a>
+<a href="#">
+<li class="relatedVideosItem">
+<p>
+<img alt="" src="./img/thumbnail.jpeg">
+</p>
+<ul class="info">
+<li>
+<h5>
+Making mac & cheese for the first time at age 16
+</h5>
+</li>
+<li>
+<h6>
+Kelly Margot
+</h6>
+</li>
+<li>
+<ul>
+<li>
+<b>
+7.3K
+</b>
+<small>
+views
+</small>
+</li>
+<li>
+<b>
+3
+</b>
+<small>
+month ago
+</small>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</a>
+<a href="#">
+<li class="relatedVideosItem">
+<p>
+<img alt="" src="./img/thumbnail.jpeg">
+</p>
+<ul class="info">
+<li>
+<h5>
+Making mac & cheese for the first time at age 16
+</h5>
+</li>
+<li>
+<h6>
+Kelly Margot
+</h6>
+</li>
+<li>
+<ul>
+<li>
+<b>
+7.3K
+</b>
+<small>
+views
+</small>
+</li>
+<li>
+<b>
+3
+</b>
+<small>
+month ago
+</small>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</a>
+<a href="#">
+<li class="relatedVideosItem">
+<p>
+<img alt="" src="./img/thumbnail.jpeg">
+</p>
+<ul class="info">
+<li>
+<h5>
+Making mac & cheese for the first time at age 16
+</h5>
+</li>
+<li>
+<h6>
+Kelly Margot
+</h6>
+</li>
+<li>
+<ul>
+<li>
+<b>
+7.3K
+</b>
+<small>
+views
+</small>
+</li>
+<li>
+<b>
+3
+</b>
+<small>
+month ago
+</small>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</a>
 </ul>
 </section>
 </article>

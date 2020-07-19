@@ -320,6 +320,61 @@ body {
   color: #777;
 }
 
+.more {
+  margin-left: 2rem;
+  display: inline-block;
+  color: #FFF;
+  background-color: lightgray;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 2px;
+  padding: 0.05rem 1rem;
+}
+
+.less {
+  display: inline-block;
+  color: #FFF;
+  background-color: lightgray;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 2px;
+  padding: 0.05rem 1rem;
+  margin-left: 2rem;
+}
+
+.wrapper::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+aside.drawer {
+  background: #ffffffe7;
+  height: 200%;
+  width: 20rem;
+  position: absolute;
+  top: 0;
+  left: -20rem;
+  transition: all 0.5s;
+  z-index: 5;
+}
+aside.drawer.active {
+  left: 0;
+}
+
+section.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #68686885;
+  opacity: 0;
+  z-index: -1;
+}
+section.overlay.active {
+  opacity: 1;
+  z-index: 3;
+}
+
 .header {
   padding-top: 1rem;
   padding-bottom: 1rem;
@@ -335,6 +390,9 @@ body {
   align-items: center;
   box-shadow: 0 2px 5px #eee;
   font-size: 1.4rem;
+  position: fixed;
+  width: 100vw;
+  background: #fff;
 }
 .header__right ul {
   /* prefix -> -webkit-*/
@@ -534,4 +592,47 @@ main article section.overview section.infoBox section.description section.descri
   width: 70%;
   max-width: 70%;
   font-weight: 300;
+}
+main article section.related {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+main article section.related h5 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+main article section.related ul.relatedVideos {
+  /* prefix -> -webkit-*/
+  display: -webkit-flex;
+  /* no prefix*/
+  display: flex;
+  flex-direction: column;
+}
+main article section.related ul.relatedVideos li.relatedVideosItem {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  /* prefix -> -webkit-*/
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  /* no prefix*/
+  display: flex;
+  align-items: center;
+}
+main article section.related ul.relatedVideos li.relatedVideosItem p img {
+  width: 8rem;
+  height: 5rem;
+}
+main article section.related ul.relatedVideos li.relatedVideosItem .info {
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+main article section.related ul.relatedVideos li.relatedVideosItem .info li h5 {
+  margin: 0;
+}
+main article section.related ul.relatedVideos li.relatedVideosItem .info li h6 {
+  font-size: 0.9rem;
 }
