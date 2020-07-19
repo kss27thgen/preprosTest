@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+%html(lang="en")
+    %head
+        %meta(charset="UTF-8")/
+        %meta(name="viewport" content="width=device-width, initial-scale=1.0")/
+        %title Document
+        %link(rel="stylesheet" href="css/second.css")/
+        %link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")/
+        %script(src="https://kit.fontawesome.com/aae2613cc2.js")
+        %script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+        %script(src="https://unpkg.com/swiper/swiper-bundle.min.js")
+        %script(src="js/main.js" defer)
+
+    %body
+        %header
+            %img(src="./img/logo-s.png" alt="logo")/
+            %a.logo(href="#")
+                %h2
+                    留学
+                    %span
+                        Express
+                %h6
+                    手数料無料の留学エージェント
+            %div.headerRight
+                %a(href="#")
+                    %i.fas.fa-phone-square
+                %a(href="#")
+                    %i.fas.fa-bars
+
+        %main
+            %section.swiper
+                %h5
+                    Malta
+                .swiper-container
+                    .swiper-wrapper
+                        .swiper-slide
+                            %img(src="./img/house1.jpg" alt="")/
+                        .swiper-slide
+                            %img(src="./img/house2.jpg" alt="")/
+                        .swiper-slide
+                            %img(src="./img/house3.jpg" alt="")/
+                    .swiper-button-prev
+                    .swiper-button-next
+                %div.swiperPop
+                    %h6
+                        ようやく解禁！2020年マルタ留学 おすすめ５校！
+                    %p
+                        地中海に浮かぶ島々で国際色豊かな留学ライフを。グルメにビーチ、リゾート満載です
+        
+            %section.challenge
+                %h3
+                    Challenge
+                %h4
+                    留学先を探す
+                %form
+                    %section.search.searchCountry
+                        %h5
+                            国を選ぶ
+                        %ul
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    アメリカ
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    オーストラリア
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    イギリス
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    カナダ
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    アイルランド
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    ニュージーランド
+                
+                    %section.search.searchPoint
+                        %h5
+                            おすすめポイントを選ぶ
+                        %ul
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    Wi-fi充実
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    大規模
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    ３０代おすすめ
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    キャンペーン
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    コスパ
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    学生寮完備
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    視察済み
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    日本人スタッフ在中
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    転校可
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    最新設備
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    高校留学
+                            %li
+                                %input(type="checkbox")/
+                                %h6
+                                    多国籍
+            %section.pickOne
+                %a.pickOneItem.reservation(href="#")
+                    %h4
+                        counseling
+                    %h5
+                        無料カウンセリング予約
+                    .separator
+                    %p
+                        海外留学ではたくさんの不安を抱えがち。そんな時は一人で悩まずお気軽にご相談ください
+                %a.pickOneItem.estimate(href="#")
+                    %h4
+                        consulting
+                    %h5
+                        無料見積もり
+                    .separator
+                    %p
+                        留学に必要な諸経費を無料でお見積もりいたします。ご希望の条件を全てお聞かせください
+
+
+
+
+        %footer

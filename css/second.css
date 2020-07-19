@@ -1,0 +1,517 @@
+@charset "UTF-8";
+/* reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+*::before {
+  vertical-align: middle;
+}
+*::after {
+  vertical-align: middle;
+}
+
+script, style {
+  display: none !important;
+}
+
+html {
+  font-size: 12px;
+}
+@media (min-width: 400px) {
+  html {
+    font-size: 12.5px;
+  }
+}
+@media (min-width: 600px) {
+  html {
+    font-size: 13px;
+  }
+}
+@media (min-width: 800px) {
+  html {
+    font-size: 13.5px;
+  }
+}
+@media (min-width: 1000px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media (min-width: 1200px) {
+  html {
+    font-size: 14.5px;
+  }
+}
+@media (min-width: 1400px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+body {
+  min-width: 320px;
+  color: #222;
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  line-height: 1.5;
+}
+
+a {
+  color: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  line-height: inherit;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a[href^=tel] {
+  cursor: initial;
+  pointer-events: none;
+}
+a[href] {
+  cursor: pointer;
+}
+a[href]:hover {
+  opacity: 0.7;
+}
+
+/* block */
+main, article, section, header, footer, aside, nav {
+  display: block;
+}
+
+h1 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1rem;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+h2 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1rem;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+h3 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 1rem;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+h4 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+h5 {
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+p {
+  word-break: break-all;
+  overflow-wrap: break-word;
+  line-height: 2;
+}
+
+ul {
+  padding: 0;
+}
+
+ol {
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+dt {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+dd {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+th {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+td {
+  word-break: break-all;
+  overflow-wrap: break-word;
+}
+
+address {
+  font-style: normal;
+}
+
+iframe {
+  max-width: 100%;
+}
+
+code {
+  font-family: "Consolas", "Menlo", "Courier New", "Courier", "メイリオ", "Meiryo", monospace;
+}
+
+video {
+  display: block;
+  max-width: 100%;
+}
+
+/* inline */
+img {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  vertical-align: middle;
+  -webkit-backface-visibility: hidden;
+}
+
+strong, em, i {
+  font-style: normal;
+}
+
+time {
+  word-break: keep-all;
+}
+
+mark {
+  background-color: transparent;
+}
+
+u {
+  text-decoration: none;
+}
+
+/* form */
+input {
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  max-width: 100%;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 2px;
+  padding: 0 0.5em;
+}
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 100em #FAFAFA inset;
+}
+
+[type=text] {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  min-height: 2.5em;
+}
+
+[type=email] {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  min-height: 2.5em;
+}
+
+[type=password] {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  min-height: 2.5em;
+}
+
+[type=checkbox] {
+  vertical-align: middle;
+}
+
+[type=radio] {
+  vertical-align: middle;
+}
+
+[type=file] {
+  max-width: 100%;
+  padding: 0.5em;
+}
+
+[type=submit] {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+[type=button] {
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  max-width: 100%;
+  min-height: 5em;
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 2px;
+  padding: 0.5em;
+}
+
+select {
+  max-width: 100%;
+  min-height: 2.5em;
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  background-color: #FFF;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 2px;
+  vertical-align: middle;
+  padding: 0.5em;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+}
+
+legend {
+  display: block;
+  width: 100%;
+  font-family: "游ゴシック Medium", "游ゴシック", "游ゴシック体", "Yu Gothic Medium", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-weight: bold;
+  padding: 0.5em;
+  float: left;
+}
+legend + * {
+  clear: both;
+}
+
+label {
+  display: inline-block;
+  cursor: pointer;
+}
+
+button {
+  font-family: "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+  font-size: 16px;
+  border: 1px solid rgba(128, 128, 128, 0.25);
+  border-radius: 2px;
+  -webkit-appearance: none;
+  appearance: none;
+  -moz-appearance: none;
+  padding: 0.5em;
+  cursor: pointer;
+}
+
+/* fancybox fix */
+#fancybox-wrap {
+  box-sizing: content-box;
+}
+
+header {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  /* prefix -> -webkit-*/
+  display: -webkit-flex;
+  -webkit-align-items: center;
+  /* no prefix*/
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+}
+header img {
+  width: 4rem;
+  height: 4rem;
+}
+header .logo {
+  margin-right: auto;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+header .logo h2 {
+  font-size: 1.6rem;
+  font-weight: 300;
+}
+header .logo h2 span {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+}
+header .headerRight {
+  font-size: 2rem;
+}
+header .headerRight a {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
+}
+header .headerRight a i.fa-phone-square {
+  color: red;
+}
+main .swiper {
+  padding: 1rem;
+  background: #3fccdf;
+  position: relative;
+  margin-bottom: 15rem;
+}
+main .swiper h5 {
+  text-align: center;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+main .swiper .swiperPop {
+  width: 80%;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  background: yellow;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(100%);
+  z-index: 3;
+}
+main .swiper .swiperPop::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: -15px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-right: 15px solid transparent;
+  border-bottom: 15px solid #fff3ad;
+  border-left: 15px solid transparent;
+}
+main .swiper .swiperPop h6 {
+  color: orangered;
+  font-size: 1.2rem;
+}
+main .challenge {
+  margin-bottom: 10rem;
+}
+main .challenge h3 {
+  text-align: center;
+  color: #26a897;
+  font-size: 2.5rem;
+  letter-spacing: 0.5rem;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+main .challenge h4 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+main .challenge form .search {
+  margin-right: 1rem;
+  margin-left: 1rem;
+  border-radius: 3px;
+  border: 2px solid #26a897;
+  margin-bottom: 1rem;
+}
+main .challenge form .search h5 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background: #26a897;
+  color: #fff;
+  font-size: 1.2rem;
+  text-align: center;
+}
+main .challenge form .search ul {
+  /* prefix -> -webkit-*/
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  /* no prefix*/
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+@media (min-width: 700px) {
+  main .challenge form .search ul {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
+}
+main .challenge form .search ul li {
+  flex-basis: 50%;
+  width: 50%;
+  max-width: 50%;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+  min-width: 15rem;
+  /* prefix -> -webkit-*/
+  /* no prefix*/
+  display: flex;
+}
+main .challenge form .search ul li h6 {
+  font-size: 1.1rem;
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
+}
+main .pickOne {
+  /* prefix -> -webkit-*/
+  display: -webkit-flex;
+  -webkit-flex-wrap: wrap;
+  /* no prefix*/
+  display: flex;
+  flex-wrap: wrap;
+}
+main .pickOne .pickOneItem {
+  flex: 1;
+  min-width: 30rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+main .pickOne .pickOneItem h4 {
+  color: #fff;
+  font-size: 2.2rem;
+  letter-spacing: 0.3rem;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+main .pickOne .pickOneItem h5 {
+  color: yellow;
+  font-weight: 300;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+main .pickOne .pickOneItem .separator {
+  margin: 1.5rem 0;
+  height: 1px;
+  width: 5%;
+  background: #fff;
+}
+main .pickOne .pickOneItem p {
+  color: #fff;
+  width: 70%;
+  text-align: center;
+}
+main .pickOne .pickOneItem.reservation {
+  background: #2f68b3;
+}
+main .pickOne .pickOneItem.estimate {
+  background: #1e9c8b;
+}

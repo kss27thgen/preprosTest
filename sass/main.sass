@@ -10,12 +10,47 @@
 
 body
     color: #777
+.more
+    margin-left: 2rem
+    +btn($padding: .05rem 1rem, $bgColor: lightgray)
+.less
+    +btn($padding: .05rem 1rem, $bgColor: lightgray)
+    margin-left: 2rem
+.wrapper
+    +clear
+
+aside.drawer
+    background: #ffffffe7
+    height: 200%
+    width: 20rem
+    position: absolute
+    top: 0
+    left: -20rem
+    transition: all .5s
+    z-index: 5
+    &.active
+        left: 0
+section.overlay
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    background: #68686885
+    opacity: 0
+    z-index: -1
+    &.active
+        opacity: 1
+        z-index: 3
 
 .header
     +padding($v: 1rem, $h:1rem)
     +flexbox($jc: space-between, $ai: center)
     box-shadow: 0 2px 5px #eee
     font-size: 1.4rem
+    position: fixed
+    width: 100vw
+    background: #fff
     &__right
         ul
             +flexbox($ai: center)
@@ -115,3 +150,24 @@ main
                                     dd
                                         +flexbasis(70%)
                                         font-weight: 300
+        section.related
+            +padding($v: 1rem, $h: 1rem)
+            h5
+                font-size: 1.1rem
+                margin-bottom: 0.5rem
+            ul.relatedVideos
+                +flexbox($direction: column)
+                li.relatedVideosItem
+                    +padding($v: 1rem, $h: 1rem)
+                    +flexbox($ai: center)
+                    p
+                        img
+                            width: 8rem
+                            height: 5rem
+                    .info
+                        +padding($h: 1rem)
+                        li
+                            h5
+                                margin: 0
+                            h6
+                                font-size: .9rem
